@@ -1,0 +1,17 @@
+<type>(scope): Subject
+
+feat(feature)
+fix(fix)
+docs(documentation)
+style(formatting, missing semicolons)
+refactor
+test(when adding or modifying tests)
+chore(any maintanance)
+
+Resolves: #123
+
+feature(project) Add initial project files
+
+* Add global.json to set DotNet version
+* Add build.proj to build in VS Code
+* Add fancy project Sentinel png and update README
