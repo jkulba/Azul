@@ -6,12 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-Kulba.Service.Azul-83B0577F-99DD-4677-B55D-9F5C84E4ADC5</UserSecretsId>
     <RootNamespace>Kulba.Service.Azul</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <!-- <PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget> -->
   </PropertyGroup>
 
   <ItemGroup>
     <Using Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Serilog.Enrichers.Context" Version="4.2.0" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
